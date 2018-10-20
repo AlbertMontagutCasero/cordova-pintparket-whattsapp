@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/boostrap/bootstrap.min.js"></script>
+    <title>WhattsAppInstantMessage</title>
+</head>
+
+<body>
+    <div class="container" id="start-block">
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre del cliente</label>
+                <input type="text " class="form-control" aria-describedby="nameClient" name="name" id="nameClient" placeholder="nombre del Cliente"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Numero de Telefono</label>
+                <input type="tel" name="telephone " class="form-control" aria-describedby="phoneNumber" id="phoneClient" placeholder="numero de telefono"
+                    required>
+            </div>
+            <div>
+                <label for="lenguajes">Idioma</label>
+                <select class="form-control" id="languageClient">
+                    <option value="es">Español</option>
+                    <option value="cat">Catalan</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary mt-5 btn-lg btn-block" id="buttonForm">Enviar Mensaje</button>
+            </div>
+            <div id="tete"></div>
+        </form>
+    </div>
+    <script type="text/javascript " src="cordova.js "></script>
+    <script type="text/javascript " src="js/index.js "></script>
+</body>
+
+</html>
